@@ -1,13 +1,30 @@
-<%- include('partials/head') %>
-
-    <title>Main Page</title>
-</head>
-<body>
-
-    <h1>Welcome to the protected area</h1>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee of The Month</title>
+  </head>
+  <body>
     <p>
-        <a href="/logout">Log out</a>
+      <a href="/logout">Log out</a>
     </p>
 
-<%- include('partials/footer') %>
+    <div class="holder">
+      <h1>Employee of the month</h1>
+      <div class="avatar">
+        <a href="#">
+          <img
+            src="https://pyxis.nymag.com/v1/imgs/a22/179/b205a78510315d932427143ad6b6fb5694-03-homer-simpson-doughnuts.rsquare.w700.jpg"
+            class="user"
+          />
+        </a>
+      </div>
+      <p>name</p>
+      <h1>Homer Simpson</h1>
+      <p>achievement</p>
+      <h1>101 days without an accident</h1>
+    </div>
+  </body>
+</html>
