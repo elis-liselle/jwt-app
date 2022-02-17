@@ -63,3 +63,8 @@ module.exports.getLogin = (req, res) => {
 module.exports.getMainPage = (req, res) => {
   res.render("index");
 };
+
+module.exports.getLogout = (req, res) => {
+  res.cookie("userToken", "", { httpOnly: true, maxAge: 1 });
+  res.redirect("/");
+};
